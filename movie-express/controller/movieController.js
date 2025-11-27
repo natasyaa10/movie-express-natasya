@@ -25,7 +25,7 @@ export const addNewMovie = async (req,res) => {
     try {
         const { judul, tahunRilis, sutradara } = req.body;
         
-        if (!judul || !tahunRilis, sutradara) {
+        if (!judul || !tahunRilis || !sutradara) {
             return res.status(400).json({
                 message: "Semua field (judul, tahunRilis, sutradara) wajib diisi",
                 data: null

@@ -22,9 +22,8 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "",
-						"type": "text",
-						"disabled": true
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyN2ZlNzc1OGY3MzdkM2E5MjEwZjIxIiwidXNlcm5hbWUiOiJuYXRhc3lhIiwiaWF0IjoxNzY0MjI5ODcxLCJleHAiOjE3NjQyMzA3NzF9.R3_8GP7G0xB0LmQhMyvg-cYJsv0szwRE9XF9JmpNlfo",
+						"type": "text"
 					}
 				],
 				"body": {
@@ -63,14 +62,13 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "",
-						"type": "text",
-						"disabled": true
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyN2ZlNzc1OGY3MzdkM2E5MjEwZjIxIiwidXNlcm5hbWUiOiJuYXRhc3lhIiwiaWF0IjoxNzY0MjMwNDc0LCJleHAiOjE3NjQyMzEzNzR9.AhrCgfvryY3U510ErsR3vSH-j996hBuCVtt8tjMJQWs",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"judul\" : \"Love Story\",\r\n    \"tahunRilis\" : \"2025\",\r\n    \"sutradara\" : \"Nana\"\r\n}",
+					"raw": "{\r\n    \"judul\" : \"Smile\",\r\n    \"tahunRilis\" : \"2022\",\r\n    \"sutradara\" : \"Naya\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -104,14 +102,13 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "",
-						"type": "text",
-						"disabled": true
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyN2ZlNzc1OGY3MzdkM2E5MjEwZjIxIiwidXNlcm5hbWUiOiJuYXRhc3lhIiwiaWF0IjoxNzY0MjMwNDc0LCJleHAiOjE3NjQyMzEzNzR9.AhrCgfvryY3U510ErsR3vSH-j996hBuCVtt8tjMJQWs",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"judul\" : \"Fearless\",\r\n    \"tahunRilis\" : \"2025\",\r\n    \"sutradara\" : \"Merry\"\r\n}",
+					"raw": "{\r\n    \"judul\" : \"Money\",\r\n    \"tahunRilis\" : \"2025\",\r\n    \"sutradara\" : \"Merry\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -119,7 +116,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/movie/68fe1e927fd3974968a62765",
+					"raw": "http://localhost:3000/api/movie/692805c2e43f604e911069ce",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -128,7 +125,7 @@
 					"path": [
 						"api",
 						"movie",
-						"68fe1e927fd3974968a62765"
+						"692805c2e43f604e911069ce"
 					]
 				}
 			},
@@ -146,13 +143,12 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "",
-						"type": "text",
-						"disabled": true
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyN2ZlNzc1OGY3MzdkM2E5MjEwZjIxIiwidXNlcm5hbWUiOiJuYXRhc3lhIiwiaWF0IjoxNzY0MjMwNDc0LCJleHAiOjE3NjQyMzEzNzR9.AhrCgfvryY3U510ErsR3vSH-j996hBuCVtt8tjMJQWs",
+						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/api/movie/68fe1e927fd3974968a62765",
+					"raw": "http://localhost:3000/api/movie/692805c2e43f604e911069ce",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -161,7 +157,126 @@
 					"path": [
 						"api",
 						"movie",
-						"68fe1e927fd3974968a62765"
+						"692805c2e43f604e911069ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"natasya\",\r\n    \"email\" : \"nat@gmail.com\",\r\n    \"password\" : \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"natasya\",\r\n    \"email\" : \"nat@gmail.com\",\r\n    \"password\" : \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyN2ZlNzc1OGY3MzdkM2E5MjEwZjIxIiwidXNlcm5hbWUiOiJuYXRhc3lhIiwiaWF0IjoxNzY0MjI4ODE3LCJleHAiOjE3NjQyMjk3MTd9.yBX1bZCq1PfO2hwV4FkNHyEAir1oQ51gqv6KDs6PdWQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"Happy Everyday\",\r\n    \"tahunRilis\" : \"2025\",\r\n    \"sutradara\" : \"Syaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie"
 					]
 				}
 			},
